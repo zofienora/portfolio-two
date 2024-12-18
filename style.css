@@ -29,10 +29,7 @@ body {
     overflow: hidden;
 }
 
-
-
 /* __________________________________MAIN________________________________________ */
-
 main {
     height: 100vh;
     width: 100vw;
@@ -99,6 +96,34 @@ main {
 
 
 /* Description */
+
+.description {
+    position: absolute; /* Position both divs absolutely within the main container */
+    width: 100%; /* Ensure full width or any specific width */
+    padding: 60px; /* Optional padding */
+    top: 20%;
+}
+
+.description h1 {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.description p {
+    font-family: "cabin";
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
 
 
 /* Illustration of me */
