@@ -47,6 +47,7 @@ main {
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    padding-top: 20px;
 }
 
 .navigation p {
@@ -55,6 +56,47 @@ main {
     text-transform: uppercase;
     margin-left: 60px;   
 }
+
+.navigation .right {
+    display: flex;
+    gap: 50px;
+    margin-right: 60px;
+    font-family: "Cabin", sans-serif;
+}
+
+.navigation .right a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    position: relative;
+    display: inline-block;
+}
+
+.navigation .right a:hover {
+    color:#333
+}
+
+.navigation .right a::before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position relative to the link */
+    top: -6px; /* Adjust to create space above the text */
+    left: -10px; /* Adjust to create space on the left */
+    right: -10px; /* Adjust to create space on the right */
+    bottom: -6px; /* Adjust to create space below the text */
+    border: 1px solid black; /* Add black border */
+    border-radius: 20px; /* Rounded corners (adjust as needed) */
+    background-color: transparent; /* Transparent background */
+    pointer-events: none; /* Ensure the hover state only affects the link, not the pseudo-element */
+    opacity: 0; /* Start invisible */
+    transform: scale(0.9); /* Slight shrink for animation effect */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth animation */
+}
+
+.navigation .right a:hover::before {
+    opacity: 1; /* Make it visible */
+    transform: scale(1); /* Full size */
+}
+
 
 /* Description */
 
