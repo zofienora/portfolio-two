@@ -121,6 +121,23 @@ main {
     line-height: 1.5;
 }
 
+/* arrow */
+
+.projectarrow {
+    position: absolute; /* Position the arrow div */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the circle */
+    bottom: 30px; /* Position the arrow below the description */
+}
+
+.circle {
+    width: 30px; /* Circle width */
+    height: 30px; /* Circle height */
+    background-color: linear-gradient(90deg, rgba(244,162,97,1) 0%, rgba(239,219,94,1) 100%)!important;
+    border-radius: 50%; /* Makes the div round */
+    z-index: 100;
+}
+
 /* Illustration of me */
 
 .illustration {
