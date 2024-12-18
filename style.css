@@ -10,17 +10,41 @@ font-family: "Roboto", serif;
 
 /* ________________________________BASICS__________________________________________ */
 
+/* Global Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Ensure the full height of the viewport for html and body */
+html, body {
+    height: 100%;  /* Make sure both html and body take up the full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
 
 
-/* __________________________________________________________________________ */
+
+/* __________________________________MAIN________________________________________ */
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6EEE3;
+}
+
+/* Navigation */
 
 
+/* Description */
+
+
+/* Illustration of me */
 
 
 
