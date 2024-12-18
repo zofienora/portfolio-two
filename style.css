@@ -1,5 +1,7 @@
 /* 
 White Warm: #FAF8F5
+background-color: hsl(30, 44%, 98%);
+
 Yellow: #EFDB5E
 Orange: **#F4A261**
 Beige: #F6EEE3
@@ -33,7 +35,8 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    background-color: #F6EEE3;
+    background-color: hsl(30, 44%, 98%);
+    position: relative;
 }
 
 /* Navigation */
@@ -107,28 +110,31 @@ main {
 .description h1 {
     font-family: "Roboto", serif;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 10rem;
     text-transform: uppercase;
 }
 
 .description p {
     font-family: "cabin";
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 20px;
     line-height: 1.5;
 }
 
-
-
-
-
-
-
-
-
 /* Illustration of me */
 
+.illustration {
+    position: absolute; /* Position the div absolutely within the main container */
+    top: 0%; /* Adjust vertical positioning */
+    left: 55%; /* Position the div on the right side of the page */
+    z-index: 0; /* Make sure it stays behind the description */
+}
 
+.illustration img {
+    width: 1000px; /* Adjust width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Make the image edges rounded */
+}
 
 
 /* __________________________________________________________________________ */
