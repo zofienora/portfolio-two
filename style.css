@@ -265,14 +265,18 @@ main {
 /* ----------------------------- */
 
 .factspopping {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
 }
+
 
 .factspop {
     background-color: bisque;
     height: 50px;
     z-index: 3;
-    transform: translateY(700%);
-    z-index: 2;
+ 
+    
+
 }
 
 .halfsun {
@@ -288,9 +292,9 @@ main {
         hsl(46deg 83% 66%) 69%,
         hsl(48deg 83% 65%) 82%,
         hsl(52deg 82% 65%) 100%);
-    border-radius: 50%; /* Makes it a circle */
-    transform: translateX(-50%);
-    z-index: 0;
+    border-radius: 50%;
+    margin-left: 60px;
+    
     
 }
 
