@@ -12,8 +12,16 @@ const facts = [
 const button = document.querySelector('.marquee-button');
 const halfSun = document.querySelector('.halfsun');
 
+// Keep track of the current fact element
+let currentFactElement = null;
+
 // Function to generate a random fact
 function generateFact() {
+    // If a fact is already displayed, remove it immediately
+    if (currentFactElement) {
+        currentFactElement.remove();
+    }
+
     // Pick a random fact
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
 
@@ -22,13 +30,23 @@ function generateFact() {
     factElement.textContent = randomFact;
     factElement.classList.add('fact-display');
 
-    // Append the fact to the half-sun
+    // Append the new fact to the half-sun
     halfSun.appendChild(factElement);
+
+    // Update the reference to the current fact element
+    currentFactElement = factElement;
 
     // Trigger fade-out after 3 seconds
     setTimeout(() => {
-        factElement.classList.add('fade-out');
-        factElement.addEventListener('transitionend', () => factElement.remove());
+        if (currentFactElement === factElement) { // Ensure it's the same fact
+            factElement.classList.add('fade-out');
+            factElement.addEventListener('transitionend', () => {
+                if (currentFactElement === factElement) { // Remove only if it's the same fact
+                    factElement.remove();
+                    currentFactElement = null; // Reset current fact reference
+                }
+            });
+        }
     }, 3000);
 }
 
