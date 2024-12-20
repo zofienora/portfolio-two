@@ -250,9 +250,6 @@ main {
     transition: transform 0.1s ease; /* Add a smooth transition for the scale effect */
 }
 
-
-
-
 /* Animation */
 @keyframes marquee-animation {
     0% {
@@ -263,9 +260,6 @@ main {
     }
 }
 
-
-
-
 /* ----------------------------- */
 
 .factspopping {
@@ -273,14 +267,10 @@ main {
     justify-content: center; /* Center horizontally */
 }
 
-
 .factspop {
     background-color: bisque;
     height: 50px;
     z-index: 3;
- 
-    
-
 }
 
 .halfsun {
@@ -301,10 +291,7 @@ main {
     position: relative; /* Make it a reference point for absolutely positioned elements */
     display: flex;
     justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-
-    
-    
+    align-items: center; /* Center content vertically */ 
 }
 
 /* Style for the fact text */
@@ -329,9 +316,9 @@ main {
 }
 
 
+/* ___________________________PROJECT SECTION_______________________________________________ */
 
 
-/* __________________________________________________________________________ */
 
 
 
