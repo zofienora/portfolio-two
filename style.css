@@ -159,18 +159,31 @@ main {
 /* _______________________FACT GENERATOR_______________________________________ */
 
 .factgenerator {
-    width:auto;
+    display: flex;
     height: 100vh;
+    justify-content: space-between; 
+    align-items: center; /* Align children vertically */
+    padding: 20px; /* Added padding for spacing */
+    position: relative; 
     background-color: hsl(30, 44%, 98%);
 }
 
 
 .facts {
-    width:auto;
+    width: 100%;
     height: 80%;
-    margin-left: 60px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 60px;
+}
+
+.facttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .facttext h2 {
@@ -186,18 +199,6 @@ main {
 }
 
 /* ----- BUTTON -------- */
-
-/* button {
-    
-    border: solid #000000 1px;
-    text-decoration: none;
-    
-    
-    font-size: 2rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    overflow: hidden; 
-} */
 
 /* Basic Button Styles */
 .marquee-button {
@@ -263,14 +264,20 @@ main {
 
 /* ----------------------------- */
 
+.factspopping {
+}
+
 .factspop {
     background-color: bisque;
     height: 50px;
+    z-index: 3;
+    transform: translateY(700%);
+    z-index: 2;
 }
 
 .halfsun {
-    width: 300px; /* Circle width */
-    height: 300px; /* Circle height (same as width for a perfect circle) */
+    width: 700px; /* Circle width */
+    height: 700px; /* Circle height (same as width for a perfect circle) */
     background-image: linear-gradient( 45deg,
         hsl(27deg 87% 67%) 0%,
         hsl(30deg 86% 67%) 20%,
@@ -282,6 +289,9 @@ main {
         hsl(48deg 83% 65%) 82%,
         hsl(52deg 82% 65%) 100%);
     border-radius: 50%; /* Makes it a circle */
+    transform: translateX(-50%);
+    z-index: 0;
+    
 }
 
 
