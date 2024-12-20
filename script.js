@@ -1,11 +1,16 @@
 // Array of facts about you
 const facts = [
-    "I love coding in the early morning hours.",
-    "My favorite comfort food is pasta.",
-    "I enjoy watching the sunrise.",
-    "I dream of traveling to Japan someday.",
-    "I hit the gym three times a week!",
-    "I have a fascination with airplanes.",
+    "I love coding in the early morning hours",
+    "I enjoy watching the sunrise",
+    "I dream of traveling to Japan someday",
+    "Tea over Coffee",
+    "I have a fascination with airports & airplanes",
+    "Water is my Happy Place",
+    "I love moss, I think it is beautiful",
+    "I grew up in the forest",
+    "I’m convinced that JavaScript is a bit like magic—there’s always something new to discover!",
+    "I'm like collecting design inspiration from nature, fashion, and architecture!",
+    "I’m always listening to music while I code"
 ];
 
 // Get the button and the half-sun container

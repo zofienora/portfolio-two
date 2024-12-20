@@ -243,11 +243,15 @@ main {
     animation: marquee-animation 30s linear infinite; /* Infinite scrolling animation */
 }
 
-
-
-.marquee-button:hover .marquee-text:nth-child(2) {
-    display: inline-block; /* Make the second text visible when hovered */
+.marquee-button:active {
+    background-color: #e0e0e0; /* Darker background on click */
+    border-color: #555; /* Darker border on click */
+    transform: scale(0.95); /* Shrink button slightly for "pressed" effect */
+    transition: transform 0.1s ease; /* Add a smooth transition for the scale effect */
 }
+
+
+
 
 /* Animation */
 @keyframes marquee-animation {
@@ -294,23 +298,29 @@ main {
         hsl(52deg 82% 65%) 100%);
     border-radius: 50%;
     margin-left: 60px;
+    position: relative; /* Make it a reference point for absolutely positioned elements */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
     
     
 }
 
 /* Style for the fact text */
 .fact-display {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2rem;
-    font-family: "Cabin", sans-serif;
-    text-align: center;
-    opacity: 1;
+    position: absolute; /* Position relative to the parent (.halfsun) */
+    top: 50%; /* Position in the middle vertically */
+    left: 50%; /* Position in the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center the element */
+    font-size: 1.5rem; /* Set your desired font size */
+    font-family: "Cabin", sans-serif; /* Font family */
+    text-transform: uppercase;
+    text-align: center; /* Center the text inside the element */
+    opacity: 1; /* Start fully visible */
     transition: opacity 1s ease; /* Smooth fade-out transition */
-    color: #333; /* Text color */
+    color: #000000; /* Text color */
 }
+
 
 /* Fade-out effect */
 .fact-display.fade-out {
