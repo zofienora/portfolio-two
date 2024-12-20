@@ -288,20 +288,21 @@ main {
     height: 700px; /* Circle height (same as width for a perfect circle) */
     background-image: linear-gradient( 45deg,
         hsl(27deg 87% 67%) 0%,
-        hsl(30deg 86% 67%) 20%,
-        hsl(33deg 86% 66%) 32%,
-        hsl(36deg 85% 66%) 41%,
-        hsl(39deg 85% 66%) 49%,
-        hsl(42deg 84% 66%) 58%,
-        hsl(46deg 83% 66%) 69%,
-        hsl(48deg 83% 65%) 82%,
-        hsl(52deg 82% 65%) 100%);
+        hsl(30deg 86% 67%) 10%,
+        hsl(33deg 86% 66%) 15%,
+        hsl(36deg 85% 66%) 20%,
+        hsl(39deg 85% 66%) 25%,
+        hsl(42deg 84% 66%) 30%,
+        hsl(46deg 83% 66%) 35%,
+        hsl(48deg 83% 65%) 40%,
+        hsl(52deg 82% 65%) 50%);
     border-radius: 50%;
     margin-left: 60px;
     position: relative; /* Make it a reference point for absolutely positioned elements */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+
     
     
 }
@@ -316,7 +317,7 @@ main {
     font-family: "Cabin", sans-serif; /* Font family */
     text-transform: uppercase;
     text-align: center; /* Center the text inside the element */
-    opacity: 1; /* Start fully visible */
+    opacity: 2; /* Start fully visible */
     transition: opacity 1s ease; /* Smooth fade-out transition */
     color: #000000; /* Text color */
 }
