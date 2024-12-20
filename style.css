@@ -159,14 +159,15 @@ main {
 
 .factgenerator {
     width:auto;
-    height: 80vh;
-    margin-left: 60px;
+    height: 100vh;
+    background-color: hsl(30, 44%, 98%);
 }
 
 
 .facts {
     width:auto;
     height: 80%;
+    margin-left: 60px;
     display: flex;
     align-items: center;
 }
@@ -174,14 +175,29 @@ main {
 .facttext h2 {
     font-size: 5rem;
     font-family: "Roboto";
+    text-transform: uppercase;
 }
 
 .facttext p {
     font-size: 1.5rem;
     font-family: "Cabin";
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    background-color: hsl(30, 44%, 98%);
+    font-family: "cabin";
+    margin-top: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 
+/* ----------------------------- */
 
 .factspop {
     background-color: bisque;
