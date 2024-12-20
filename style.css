@@ -185,17 +185,80 @@ main {
     margin-top: 20px;
 }
 
-button {
-    border-radius: 50px;
-    padding: 10px 20px 10px 20px;
+/* ----- BUTTON -------- */
+
+/* button {
+    
     border: solid #000000 1px;
     text-decoration: none;
-    background-color: hsl(30, 44%, 98%);
-    font-family: "cabin";
-    margin-top: 20px;
+    
+    
     font-size: 2rem;
     text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden; 
+} */
+
+/* Basic Button Styles */
+.marquee-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid black; /* 1px solid black border */
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 150px; /* Set a fixed width for the button */
+    color: #333; /* Text color */
+    font-family: "Cabin";
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden; /* Hide overflowing text */
+    transition: all 0s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Center the text horizontally */
 }
+
+/* Marquee Container */
+.marquee-container {
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Arrange the text in a horizontal row */
+    width: 100%;
+    height: 100%;
+}
+
+/* Marquee Text */
+.marquee-text {
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 1; /* Text is visible by default */
+    transition: transform 2s ease; /* Smooth transformation */
+}
+
+
+/* Hover Effect */
+.marquee-button:hover .marquee-text {
+    animation: marquee-animation 30s linear infinite; /* Infinite scrolling animation */
+}
+
+
+
+.marquee-button:hover .marquee-text:nth-child(2) {
+    display: inline-block; /* Make the second text visible when hovered */
+}
+
+/* Animation */
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0); /* Start from its current position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+
 
 
 /* ----------------------------- */
