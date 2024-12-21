@@ -329,25 +329,27 @@ main {
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-auto-rows: 500px;
     grid-row-gap: 10px;
-    background-color: #555;
 
 }
 
 .one {
     border-radius: 25%;
+    
     border-color: #000000;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .two {
     border-radius: 25%;
+ 
     border-color: #551818;
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .three {
     border-radius: 25%;
-    border-color: #000000;
+    
+    border-color: #415074;
     grid-area: 1 / 3 / 2 / 4;
 }
 
