@@ -49,11 +49,10 @@ main {
     align-items: center;
     height: 60px;
     padding-top: 20px;
-    position: sticky;
 }
 
 .navigation p {
-    font-family: "Roboto", serif;
+    font-family: "Cabin", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     margin-left: 60px;   
@@ -63,7 +62,9 @@ main {
     display: flex;
     gap: 50px;
     margin-right: 60px;
-    font-family: "Cabin", sans-serif;
+    font-family: "Roboto";
+    position: sticky;
+
 }
 
 .navigation .right a {
@@ -110,14 +111,15 @@ main {
 }
 
 .description h1 {
-    font-family: "Roboto", serif;
+    font-family: "Cabin", sans-serif;
     font-weight: 900;
-    font-size: 10rem;
+    font-size: 8rem;
     text-transform: uppercase;
 }
 
 .description p {
-    font-family: "cabin";
+    font-family: "Roboto";
+    font-weight: 100;
     font-size: 1.5rem;
     margin-top: 20px;
     line-height: 1.5;
@@ -189,13 +191,14 @@ main {
 
 .facttext h2 {
     font-size: 5rem;
-    font-family: "Roboto";
+    font-family: "Cabin", sans-serif;
     text-transform: uppercase;
 }
 
 .facttext p {
     font-size: 1.5rem;
-    font-family: "Cabin";
+    font-family: "Roboto";
+    font-weight: 100;
     margin-top: 20px;
 }
 
@@ -302,7 +305,8 @@ main {
     left: 50%; /* Position in the middle horizontally */
     transform: translate(-50%, -50%); /* Adjust to truly center the element */
     font-size: 1.5rem; /* Set your desired font size */
-    font-family: "Cabin", sans-serif; /* Font family */
+    font-family: "Roboto";
+    font-style: italic;
     text-transform: uppercase;
     text-align: center; /* Center the text inside the element */
     opacity: 2; /* Start fully visible */
