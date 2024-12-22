@@ -134,7 +134,10 @@ strong:hover {
     background: linear-gradient(90deg, #F4A261, #EFDB5E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* Webkit-specific */
     transition: 0.3s ease;
+    background-color: black; /* Fallback for non-supporting browsers */
 }
 
 
@@ -309,12 +312,10 @@ strong:hover {
     color: #000000; /* Text color */
 }
 
-
 /* Fade-out effect */
 .fact-display.fade-out {
     opacity: 0; /* Fully transparent */
 }
-
 
 /* ___________________________PROJECT SECTION_______________________________________________ */
 
