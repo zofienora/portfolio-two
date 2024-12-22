@@ -115,7 +115,7 @@ main {
 .description h1 {
     font-family: "Cabin", sans-serif;
     font-weight: 900;
-    font-size: 9rem;
+    font-size: 7rem;
     line-height: 90%;
     width:60%;
     text-transform: uppercase;
@@ -136,7 +136,7 @@ strong:hover {
     -webkit-text-fill-color: transparent;
     background-clip: text; /* Standard */
     -webkit-background-clip: text; /* Webkit-specific */
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
     background-color: black; /* Fallback for non-supporting browsers */
 }
 
@@ -216,7 +216,7 @@ strong:hover {
     color: #333; /* Text color */
     font-family: "Cabin";
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     overflow: hidden; /* Hide overflowing text */
     transition: all 0s ease; /* Smooth transition for hover effects */
@@ -302,10 +302,9 @@ strong:hover {
     top: 50%; /* Position in the middle vertically */
     left: 50%; /* Position in the middle horizontally */
     transform: translate(-50%, -50%); /* Adjust to truly center the element */
-    font-size: 1.5rem; /* Set your desired font size */
+    font-size: 1.7rem; /* Set your desired font size */
     font-family: "Roboto";
-    font-style: italic;
-    text-transform: uppercase;
+    font-weight: 100;
     text-align: center; /* Center the text inside the element */
     opacity: 2; /* Start fully visible */
     transition: opacity 1s ease; /* Smooth fade-out transition */
