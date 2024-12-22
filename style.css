@@ -132,8 +132,9 @@ main {
 
 strong:hover {
     background: linear-gradient(90deg, #F4A261, #EFDB5E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease;
 }
 
 
@@ -172,7 +173,7 @@ strong:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 .facttext {
@@ -285,7 +286,7 @@ strong:hover {
         hsl(48deg 83% 65%) 40%,
         hsl(52deg 82% 65%) 50%);
     border-radius: 50%;
-    margin-left: 60px;
+    margin-left: 100px;
     position: relative; /* Make it a reference point for absolutely positioned elements */
     display: flex;
     justify-content: center; /* Center content horizontally */
