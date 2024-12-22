@@ -49,21 +49,23 @@ main {
     align-items: center;
     height: 60px;
     padding-top: 20px;
+    z-index: 1000;
 }
 
 .navigation p {
     font-family: "Cabin", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    margin-left: 60px;   
+    margin-left: 100px;   
 }
 
 .navigation .right {
     display: flex;
     gap: 50px;
-    margin-right: 60px;
+    margin-right: 100px;
     font-family: "Roboto";
     position: sticky;
+    z-index: 1000;
 
 }
 
@@ -106,7 +108,7 @@ main {
 .description {
     position: absolute; /* Position both divs absolutely within the main container */
     width: 100%; /* Ensure full width or any specific width */
-    padding: 60px; /* Optional padding */
+    padding: 100px; /* Optional padding */
     top: 20%;
 }
 
@@ -129,27 +131,14 @@ main {
 
 /* arrow */
 
-.projectarrow {
-    position: absolute; /* Position the arrow div */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center the circle */
-    bottom: 30px; /* Position the arrow below the description */
-}
 
-.circle {
-    width: 30px; /* Circle width */
-    height: 30px; /* Circle height */
-    background-color: linear-gradient(90deg, rgba(244,162,97,1) 0%, rgba(239,219,94,1) 100%)!important;
-    border-radius: 50%; /* Makes the div round */
-    z-index: 100;
-}
 
 /* Illustration of me */
 
 .illustration {
     position: absolute; /* Position the div absolutely within the main container */
-    top: 0%; /* Adjust vertical positioning */
-    left: 55%; /* Position the div on the right side of the page */
+    top: 2%; /* Adjust vertical positioning */
+    left: 50%; /* Position the div on the right side of the page */
     z-index: 0; /* Make sure it stays behind the description */
 }
 
