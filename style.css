@@ -364,21 +364,27 @@ main {
 
 .image-text {
     position: absolute;
-    top: 50%;
-    transform: translate(-100%, -50%); /* Center the text */
-    background: rgba(241, 243, 244, 0.72);
-    color: black;
-    padding: 10px;
-    font-size: 1rem;
-    font-family: "Roboto";
-    visibility: hidden;
-    opacity: 1;
-    transition: opacity 0.3s ease, visibility 1s ease;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%; /* Full width of the .project container */
+    height: 100%; /* Full height of the .project container */
+    display: flex; /* Center the text inside the background */
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    color: black; /* Text color */
+    font-family: "Cabin";
+    border-radius: 25px; /* Match the parent container's border-radius */
+    font-size: 1.2rem;
     text-align: left;
+    padding-left: 10px;;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease; /* Smooth slide and fade effect */
 }
 
 .project:hover .image-text {
-    left: 50%;
+    left: 0;
     visibility: visible;
     opacity: 1;
     z-index: 10;
