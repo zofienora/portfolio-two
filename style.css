@@ -145,13 +145,13 @@ strong:hover {
 
 .illustration {
     position: absolute; /* Position the div absolutely within the main container */
-    top: 2%; /* Adjust vertical positioning */
-    left: 50%; /* Position the div on the right side of the page */
+    top: 13%; /* Adjust vertical positioning */
+    left: 61%; /* Position the div on the right side of the page */
     z-index: 0; /* Make sure it stays behind the description */
 }
 
 .illustration img {
-    width: 1000px; /* Adjust width of the image as needed */
+    width: 600px; /* Adjust width of the image as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Make the image edges rounded */
 }
