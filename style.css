@@ -335,9 +335,15 @@ strong:hover {
     width: auto;
     background-color: hsl(30, 44%, 98%);
     display: flex; /* Optional: centers the grid if you want */
-    justify-content: center; /* Centers the grid horizontally */
-    align-items: center; /* Centers the grid vertically */
+    flex-direction: column;
+    justify-content: space-around; /* Centers the grid horizontally */
+    padding-left: 100px;
 }
+
+/* .headline-projects {
+    text-align: left;
+    align-items: start;
+} */
 
 .projects {
     display: grid;
