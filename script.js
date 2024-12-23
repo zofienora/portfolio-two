@@ -57,3 +57,20 @@ function generateFact() {
 
 // Add click event listener to the button
 button.addEventListener('click', generateFact);
+
+
+// -------------------------------------------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navigation = document.querySelector(".navigation");
+    const navOffset = navigation.offsetTop;
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY >= navOffset) {
+            navigation.classList.add("sticky");
+        } else {
+            navigation.classList.remove("sticky");
+        }
+    });
+});
+

@@ -47,10 +47,22 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: auto;
     padding-top: 20px;
+    transition: all 0.3s ease-in-out;
     z-index: 1000;
 }
+
+.navigation.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Keeps the blur effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition when sticky is added */
+}
+
 
 .navigation p {
     font-family: "Cabin", sans-serif;
@@ -64,9 +76,10 @@ main {
     gap: 50px;
     margin-right: 100px;
     font-family: "Roboto";
-    position: sticky;
     z-index: 1000;
-
+    position: sticky;
+    backdrop-filter: blur(5px); /* Optional: Adds a subtle blur for a polished look */
+    top: 0; /* Stick to the top of the viewport */
 }
 
 .navigation .right a {
@@ -74,7 +87,6 @@ main {
     color: #333; /* Link color */
     transition: color 0.3s ease; /* Smooth hover effect */
     position: relative;
-    display: inline-block;
 }
 
 .navigation .right a:hover {
