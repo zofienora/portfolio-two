@@ -429,13 +429,45 @@ strong:hover {
     background-color: hsl(30, 44%, 98%);
 }
 
+.contact h2 {
+    font-size: 5rem;
+    font-family: "Cabin", sans-serif;
+    text-transform: uppercase;
+    margin-left: 100px;
+    margin-bottom: 150px;
+}
 
 
+.contact ul {
+font-size: 2rem;
+font-family: "Roboto";
+font-weight: 200;
+display: flex;
+gap: 100px;
+margin-left: 100px;
+margin-bottom: 200px;
+list-style-type: none;
+text-decoration: none;
+}
+
+.contact ul li a {
+    text-decoration: none !important;  /* Ensures the underline is removed */
+    color: black !important;   
+}
+
+.contact ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot p {
+    font-family: "Roboto";
+    font-size: 0.5rem;
+    bottom: 0%;
+    margin-left: 100px;
+}
 
 
-
-
-
-
+ 
 
 /* __________________________________________________________________________ */
