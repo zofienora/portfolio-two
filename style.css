@@ -308,6 +308,19 @@ strong:hover {
     align-items: center; /* Center content vertically */ 
 }
 
+.halfsun::before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Adjust for border thickness */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%; /* Match the parent circle */
+    background: inherit; /* Use the same gradient as the circle */
+    filter: blur(10px); /* Apply blur only to the border */
+    z-index: 0; /* Ensure it stays behind the circle */
+}
+
 /* Style for the fact text */
 .fact-display {
     position: absolute; /* Position relative to the parent (.halfsun) */
@@ -408,13 +421,17 @@ strong:hover {
     z-index: 10;
 }
 
+/* ____________________________CONTACT______________________________________________ */
+
+.contact {
+    height: 50vh;
+    width: auto;
+    background-color: hsl(30, 44%, 98%);
+}
 
 
 
 
-
-
-/* __________________________________________________________________________ */
 
 
 
